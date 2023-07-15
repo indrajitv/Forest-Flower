@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A50FC0522A36C9B600D7E558 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FC0512A36C9B600D7E558 /* PhotoViewModel.swift */; };
+		A50FC0542A36CABF00D7E558 /* BlurHashDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FC0532A36CABF00D7E558 /* BlurHashDecode.swift */; };
+		A50FC0562A36D33600D7E558 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FC0552A36D33600D7E558 /* PhotoView.swift */; };
+		A50FC0582A36F6C800D7E558 /* ErrorHoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FC0572A36F6C800D7E558 /* ErrorHoarding.swift */; };
+		A50FC05A2A370AD800D7E558 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FC0592A370AD800D7E558 /* NavigationConfigurator.swift */; };
+		A51149412A5A882400698852 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51149402A5A882400698852 /* SearchViewModelTests.swift */; };
+		A51149432A5A95BB00698852 /* SearchPhotosResult.json in Resources */ = {isa = PBXBuildFile; fileRef = A51149422A5A95BB00698852 /* SearchPhotosResult.json */; };
+		A51D94E02A3DEAB9004588EC /* ForestFlower.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A51D94DE2A3DEAB9004588EC /* ForestFlower.xcdatamodeld */; };
+		A51D94E72A3DEC0A004588EC /* SavedPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D94E52A3DEC0A004588EC /* SavedPhoto+CoreDataClass.swift */; };
+		A51D94E82A3DEC0A004588EC /* SavedPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D94E62A3DEC0A004588EC /* SavedPhoto+CoreDataProperties.swift */; };
+		A51D94EB2A3DEC78004588EC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D94EA2A3DEC78004588EC /* CoreDataManager.swift */; };
+		A51D94ED2A3DF933004588EC /* SavedPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D94EC2A3DF933004588EC /* SavedPhotosViewModel.swift */; };
+		A5242BD92A3A04DC00D73827 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5242BD82A3A04DC00D73827 /* Font.swift */; };
+		A5278EE82A3AF7410046859B /* SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5278EE72A3AF7410046859B /* SystemImage.swift */; };
+		A52AEE022A3B57910054A082 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AEE012A3B57910054A082 /* Downloader.swift */; };
+		A52DA5AF2A3F410C0068ED50 /* PhoneViewModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52DA5AE2A3F410C0068ED50 /* PhoneViewModel+Extension.swift */; };
+		A52E5ADE2A3759A20030AB4B /* PhotoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E5ADD2A3759A20030AB4B /* PhotoDetailsView.swift */; };
+		A54563F22A3D790C00EFEFDC /* DynamicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54563F12A3D790C00EFEFDC /* DynamicGrid.swift */; };
+		A551AA252A46E258008A1EFF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551AA242A46E258008A1EFF /* SearchViewModel.swift */; };
+		A551AA282A46F8CE008A1EFF /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551AA272A46F8CE008A1EFF /* SearchTextField.swift */; };
+		A56B656C2A512B0000D6A33F /* AnimatingHeart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56B656B2A512B0000D6A33F /* AnimatingHeart.swift */; };
+		A573B7E32A593D670074BC93 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B7E22A593D670074BC93 /* HomeViewModelTests.swift */; };
+		A573B7ED2A5945690074BC93 /* PhotosResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = A573B7EC2A5945690074BC93 /* PhotosResponse.json */; };
+		A573B7F12A5984E60074BC93 /* MockedAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B7F02A5984E60074BC93 /* MockedAPIManager.swift */; };
+		A573B7F22A59863E0074BC93 /* BundleFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B7EE2A5972210074BC93 /* BundleFileLoader.swift */; };
+		A57894092A4013B50001E348 /* Task+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57894082A4013B50001E348 /* Task+Extension.swift */; };
+		A578940C2A4037D60001E348 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A578940B2A4037D60001E348 /* SearchResultView.swift */; };
+		A57CF9342A4802EC009A5C74 /* SearchPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CF9332A4802EC009A5C74 /* SearchPhotos.swift */; };
+		A57CF9362A480553009A5C74 /* APISearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CF9352A480553009A5C74 /* APISearchResult.swift */; };
+		A57CF9382A48380C009A5C74 /* CategoryGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CF9372A48380C009A5C74 /* CategoryGrid.swift */; };
+		A59302AF2A39BC37008D74AB /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59302AE2A39BC37008D74AB /* CacheManager.swift */; };
+		A59302B12A39BF20008D74AB /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59302B02A39BF20008D74AB /* URLImage.swift */; };
+		A59C19782A3C4E47003D2A73 /* AboutUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C19772A3C4E47003D2A73 /* AboutUserView.swift */; };
+		A59C197A2A3C4EB3003D2A73 /* PhotoDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C19792A3C4EB3003D2A73 /* PhotoDetailsHeaderView.swift */; };
+		A59C197C2A3C5092003D2A73 /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C197B2A3C5092003D2A73 /* CircularProgress.swift */; };
+		A5BC7F4B2A3DDA7500FF26FE /* SavedPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC7F4A2A3DDA7500FF26FE /* SavedPhotosView.swift */; };
+		A5C31DB02A342496000A6F91 /* ForestFlowerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C31DAF2A342496000A6F91 /* ForestFlowerApp.swift */; };
+		A5C31DB42A342497000A6F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C31DB32A342497000A6F91 /* Assets.xcassets */; };
+		A5C31DB82A342497000A6F91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C31DB72A342497000A6F91 /* Preview Assets.xcassets */; };
+		A5C31DBF2A3424EE000A6F91 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C31DBE2A3424EE000A6F91 /* HomeView.swift */; };
+		A5C31DC12A34250A000A6F91 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C31DC02A34250A000A6F91 /* HomeViewModel.swift */; };
+		A5C31DC82A342EA1000A6F91 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C31DC72A342EA1000A6F91 /* MainScene.swift */; };
+		A5C31DCA2A342F45000A6F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C31DC92A342F45000A6F91 /* AppDelegate.swift */; };
+		A5DDEF582A517CAA0082C0E0 /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDEF572A517CAA0082C0E0 /* LikesView.swift */; };
+		A5DDEF5A2A517D300082C0E0 /* LikesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDEF592A517D300082C0E0 /* LikesViewModel.swift */; };
+		A5DDEF642A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDEF622A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataClass.swift */; };
+		A5DDEF652A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDEF632A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataProperties.swift */; };
+		A5F466D72A35BC75001CF7A7 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F466D62A35BC75001CF7A7 /* APIKeys.swift */; };
+		A5F466DB2A35C6B7001CF7A7 /* APIPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F466DA2A35C6B7001CF7A7 /* APIPhoto.swift */; };
+		A5F466DE2A35D188001CF7A7 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F466DD2A35D188001CF7A7 /* Color+Extensions.swift */; };
+		A5F916BF2A3591FC00DF5ED7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F916BE2A3591FC00DF5ED7 /* APIManager.swift */; };
+		A5F916C22A3597CF00DF5ED7 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F916C12A3597CF00DF5ED7 /* CustomError.swift */; };
+		A5F916C42A3597DF00DF5ED7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F916C32A3597DF00DF5ED7 /* HTTPMethod.swift */; };
+		A5F916C62A3597F400DF5ED7 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F916C52A3597F400DF5ED7 /* EndPoint.swift */; };
+		A5F916C82A35980500DF5ED7 /* SessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F916C72A35980500DF5ED7 /* SessionProvider.swift */; };
+		A5F916CA2A35985600DF5ED7 /* APIDataCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F916C92A35985600DF5ED7 /* APIDataCoding.swift */; };
+		A5F916CD2A35B2FC00DF5ED7 /* FetchPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F916CC2A35B2FC00DF5ED7 /* FetchPhotos.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A573B7E42A593D670074BC93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C31DA42A342496000A6F91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C31DAB2A342496000A6F91;
+			remoteInfo = "Forest Flower";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A50FC0512A36C9B600D7E558 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		A50FC0532A36CABF00D7E558 /* BlurHashDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurHashDecode.swift; sourceTree = "<group>"; };
+		A50FC0552A36D33600D7E558 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		A50FC0572A36F6C800D7E558 /* ErrorHoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHoarding.swift; sourceTree = "<group>"; };
+		A50FC0592A370AD800D7E558 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
+		A51149402A5A882400698852 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		A51149422A5A95BB00698852 /* SearchPhotosResult.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchPhotosResult.json; sourceTree = "<group>"; };
+		A51D94DF2A3DEAB9004588EC /* ForestFlower.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForestFlower.xcdatamodel; sourceTree = "<group>"; };
+		A51D94E52A3DEC0A004588EC /* SavedPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedPhoto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A51D94E62A3DEC0A004588EC /* SavedPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A51D94EA2A3DEC78004588EC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		A51D94EC2A3DF933004588EC /* SavedPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPhotosViewModel.swift; sourceTree = "<group>"; };
+		A5242BD82A3A04DC00D73827 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		A5278EE72A3AF7410046859B /* SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImage.swift; sourceTree = "<group>"; };
+		A52AEE012A3B57910054A082 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		A52DA5AE2A3F410C0068ED50 /* PhoneViewModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhoneViewModel+Extension.swift"; sourceTree = "<group>"; };
+		A52E5ADD2A3759A20030AB4B /* PhotoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsView.swift; sourceTree = "<group>"; };
+		A54563F12A3D790C00EFEFDC /* DynamicGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicGrid.swift; sourceTree = "<group>"; };
+		A551AA242A46E258008A1EFF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		A551AA272A46F8CE008A1EFF /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		A56B656B2A512B0000D6A33F /* AnimatingHeart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingHeart.swift; sourceTree = "<group>"; };
+		A573B7E02A593D670074BC93 /* Forest Flower Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Forest Flower Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A573B7E22A593D670074BC93 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		A573B7EC2A5945690074BC93 /* PhotosResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PhotosResponse.json; sourceTree = "<group>"; };
+		A573B7EE2A5972210074BC93 /* BundleFileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleFileLoader.swift; sourceTree = "<group>"; };
+		A573B7F02A5984E60074BC93 /* MockedAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedAPIManager.swift; sourceTree = "<group>"; };
+		A57894082A4013B50001E348 /* Task+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Extension.swift"; sourceTree = "<group>"; };
+		A578940B2A4037D60001E348 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		A57CF9332A4802EC009A5C74 /* SearchPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotos.swift; sourceTree = "<group>"; };
+		A57CF9352A480553009A5C74 /* APISearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchResult.swift; sourceTree = "<group>"; };
+		A57CF9372A48380C009A5C74 /* CategoryGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGrid.swift; sourceTree = "<group>"; };
+		A59302AE2A39BC37008D74AB /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		A59302B02A39BF20008D74AB /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		A59C19772A3C4E47003D2A73 /* AboutUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUserView.swift; sourceTree = "<group>"; };
+		A59C19792A3C4EB3003D2A73 /* PhotoDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsHeaderView.swift; sourceTree = "<group>"; };
+		A59C197B2A3C5092003D2A73 /* CircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		A5BC7F4A2A3DDA7500FF26FE /* SavedPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPhotosView.swift; sourceTree = "<group>"; };
+		A5C31DAC2A342496000A6F91 /* Forest Flower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forest Flower.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C31DAF2A342496000A6F91 /* ForestFlowerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestFlowerApp.swift; sourceTree = "<group>"; };
+		A5C31DB32A342497000A6F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C31DB52A342497000A6F91 /* Forest Flower.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Forest Flower.entitlements"; sourceTree = "<group>"; };
+		A5C31DB72A342497000A6F91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5C31DBE2A3424EE000A6F91 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A5C31DC02A34250A000A6F91 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A5C31DC22A3426EE000A6F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C31DC72A342EA1000A6F91 /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		A5C31DC92A342F45000A6F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5DDEF572A517CAA0082C0E0 /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
+		A5DDEF592A517D300082C0E0 /* LikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewModel.swift; sourceTree = "<group>"; };
+		A5DDEF622A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedLikedPhoto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A5DDEF632A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedLikedPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A5F466D62A35BC75001CF7A7 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		A5F466DA2A35C6B7001CF7A7 /* APIPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPhoto.swift; sourceTree = "<group>"; };
+		A5F466DD2A35D188001CF7A7 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		A5F916BE2A3591FC00DF5ED7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A5F916C12A3597CF00DF5ED7 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		A5F916C32A3597DF00DF5ED7 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		A5F916C52A3597F400DF5ED7 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		A5F916C72A35980500DF5ED7 /* SessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProvider.swift; sourceTree = "<group>"; };
+		A5F916C92A35985600DF5ED7 /* APIDataCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataCoding.swift; sourceTree = "<group>"; };
+		A5F916CC2A35B2FC00DF5ED7 /* FetchPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhotos.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A573B7DD2A593D670074BC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C31DA92A342496000A6F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A51D94DD2A3DEAA1004588EC /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				A51D94DE2A3DEAB9004588EC /* ForestFlower.xcdatamodeld */,
+				A51D94EA2A3DEC78004588EC /* CoreDataManager.swift */,
+				A51D94E92A3DEC21004588EC /* SavedPhoto */,
+				A5DDEF612A5180290082C0E0 /* LikedPhoto */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		A51D94E92A3DEC21004588EC /* SavedPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				A51D94E52A3DEC0A004588EC /* SavedPhoto+CoreDataClass.swift */,
+				A51D94E62A3DEC0A004588EC /* SavedPhoto+CoreDataProperties.swift */,
+			);
+			path = SavedPhoto;
+			sourceTree = "<group>";
+		};
+		A5242BD72A3A04D400D73827 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A5242BD82A3A04DC00D73827 /* Font.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A52E5ADC2A37597C0030AB4B /* Photo Details */ = {
+			isa = PBXGroup;
+			children = (
+				A52E5ADD2A3759A20030AB4B /* PhotoDetailsView.swift */,
+				A59C19792A3C4EB3003D2A73 /* PhotoDetailsHeaderView.swift */,
+				A59C19772A3C4E47003D2A73 /* AboutUserView.swift */,
+				A56B656B2A512B0000D6A33F /* AnimatingHeart.swift */,
+			);
+			path = "Photo Details";
+			sourceTree = "<group>";
+		};
+		A551AA262A46F8C0008A1EFF /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				A551AA272A46F8CE008A1EFF /* SearchTextField.swift */,
+				A59C197B2A3C5092003D2A73 /* CircularProgress.swift */,
+				A50FC0572A36F6C800D7E558 /* ErrorHoarding.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		A573B7E12A593D670074BC93 /* Forest Flower Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A573B7F02A5984E60074BC93 /* MockedAPIManager.swift */,
+				A573B7E22A593D670074BC93 /* HomeViewModelTests.swift */,
+				A51149402A5A882400698852 /* SearchViewModelTests.swift */,
+				A573B7EB2A5945520074BC93 /* Mocked Response */,
+			);
+			path = "Forest Flower Tests";
+			sourceTree = "<group>";
+		};
+		A573B7EB2A5945520074BC93 /* Mocked Response */ = {
+			isa = PBXGroup;
+			children = (
+				A573B7EC2A5945690074BC93 /* PhotosResponse.json */,
+				A51149422A5A95BB00698852 /* SearchPhotosResult.json */,
+			);
+			path = "Mocked Response";
+			sourceTree = "<group>";
+		};
+		A57894072A4012120001E348 /* Photo Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A50FC0512A36C9B600D7E558 /* PhotoViewModel.swift */,
+				A52DA5AE2A3F410C0068ED50 /* PhoneViewModel+Extension.swift */,
+				A50FC0552A36D33600D7E558 /* PhotoView.swift */,
+			);
+			path = "Photo Cell";
+			sourceTree = "<group>";
+		};
+		A578940A2A4037C90001E348 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A551AA242A46E258008A1EFF /* SearchViewModel.swift */,
+				A578940B2A4037D60001E348 /* SearchResultView.swift */,
+				A57CF9372A48380C009A5C74 /* CategoryGrid.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A5BC7F492A3DDA5B00FF26FE /* Saved Photos */ = {
+			isa = PBXGroup;
+			children = (
+				A51D94EC2A3DF933004588EC /* SavedPhotosViewModel.swift */,
+				A5BC7F4A2A3DDA7500FF26FE /* SavedPhotosView.swift */,
+			);
+			path = "Saved Photos";
+			sourceTree = "<group>";
+		};
+		A5C31DA32A342496000A6F91 = {
+			isa = PBXGroup;
+			children = (
+				A5C31DAE2A342496000A6F91 /* Forest Flower */,
+				A573B7E12A593D670074BC93 /* Forest Flower Tests */,
+				A5C31DAD2A342496000A6F91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5C31DAD2A342496000A6F91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5C31DAC2A342496000A6F91 /* Forest Flower.app */,
+				A573B7E02A593D670074BC93 /* Forest Flower Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5C31DAE2A342496000A6F91 /* Forest Flower */ = {
+			isa = PBXGroup;
+			children = (
+				A551AA262A46F8C0008A1EFF /* Reusable Views */,
+				A51D94DD2A3DEAA1004588EC /* Core Data */,
+				A5242BD72A3A04D400D73827 /* Theme */,
+				A5F466DC2A35D17B001CF7A7 /* Utility */,
+				A5F466D92A35C6AA001CF7A7 /* Models */,
+				A5F916C02A3597C300DF5ED7 /* Errors */,
+				A5F916BD2A3591EF00DF5ED7 /* API Manager */,
+				A5C31DC42A342AFD000A6F91 /* Main */,
+				A5C31DC52A342B3D000A6F91 /* Views */,
+				A5C31DC32A342752000A6F91 /* Resources */,
+				A5C31DB62A342497000A6F91 /* Preview Content */,
+			);
+			path = "Forest Flower";
+			sourceTree = "<group>";
+		};
+		A5C31DB62A342497000A6F91 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A5C31DB72A342497000A6F91 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5C31DC32A342752000A6F91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5C31DB52A342497000A6F91 /* Forest Flower.entitlements */,
+				A5C31DC22A3426EE000A6F91 /* Info.plist */,
+				A5C31DB32A342497000A6F91 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5C31DC42A342AFD000A6F91 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A5C31DAF2A342496000A6F91 /* ForestFlowerApp.swift */,
+				A5C31DC72A342EA1000A6F91 /* MainScene.swift */,
+				A5C31DC92A342F45000A6F91 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A5C31DC52A342B3D000A6F91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5C31DC62A342B60000A6F91 /* Home */,
+				A578940A2A4037C90001E348 /* Search */,
+				A5BC7F492A3DDA5B00FF26FE /* Saved Photos */,
+				A57894072A4012120001E348 /* Photo Cell */,
+				A52E5ADC2A37597C0030AB4B /* Photo Details */,
+				A5DDEF562A517C9E0082C0E0 /* Likes */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5C31DC62A342B60000A6F91 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A54563F12A3D790C00EFEFDC /* DynamicGrid.swift */,
+				A5C31DC02A34250A000A6F91 /* HomeViewModel.swift */,
+				A5C31DBE2A3424EE000A6F91 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A5DDEF562A517C9E0082C0E0 /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDEF592A517D300082C0E0 /* LikesViewModel.swift */,
+				A5DDEF572A517CAA0082C0E0 /* LikesView.swift */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
+		A5DDEF612A5180290082C0E0 /* LikedPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDEF622A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataClass.swift */,
+				A5DDEF632A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataProperties.swift */,
+			);
+			path = LikedPhoto;
+			sourceTree = "<group>";
+		};
+		A5F466D82A35C617001CF7A7 /* Manager & Co */ = {
+			isa = PBXGroup;
+			children = (
+				A5F916BE2A3591FC00DF5ED7 /* APIManager.swift */,
+				A5F916C72A35980500DF5ED7 /* SessionProvider.swift */,
+				A5F916C92A35985600DF5ED7 /* APIDataCoding.swift */,
+				A5F916C32A3597DF00DF5ED7 /* HTTPMethod.swift */,
+			);
+			path = "Manager & Co";
+			sourceTree = "<group>";
+		};
+		A5F466D92A35C6AA001CF7A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5F466DA2A35C6B7001CF7A7 /* APIPhoto.swift */,
+				A57CF9352A480553009A5C74 /* APISearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5F466DC2A35D17B001CF7A7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A573B7EE2A5972210074BC93 /* BundleFileLoader.swift */,
+				A5F466DD2A35D188001CF7A7 /* Color+Extensions.swift */,
+				A50FC0532A36CABF00D7E558 /* BlurHashDecode.swift */,
+				A50FC0592A370AD800D7E558 /* NavigationConfigurator.swift */,
+				A59302AE2A39BC37008D74AB /* CacheManager.swift */,
+				A59302B02A39BF20008D74AB /* URLImage.swift */,
+				A5278EE72A3AF7410046859B /* SystemImage.swift */,
+				A52AEE012A3B57910054A082 /* Downloader.swift */,
+				A57894082A4013B50001E348 /* Task+Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A5F916BD2A3591EF00DF5ED7 /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A5F466D82A35C617001CF7A7 /* Manager & Co */,
+				A5F916CB2A35B2B400DF5ED7 /* API Endpoints */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		A5F916C02A3597C300DF5ED7 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				A5F916C12A3597CF00DF5ED7 /* CustomError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		A5F916CB2A35B2B400DF5ED7 /* API Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A5F466D62A35BC75001CF7A7 /* APIKeys.swift */,
+				A5F916C52A3597F400DF5ED7 /* EndPoint.swift */,
+				A5F916CC2A35B2FC00DF5ED7 /* FetchPhotos.swift */,
+				A57CF9332A4802EC009A5C74 /* SearchPhotos.swift */,
+			);
+			path = "API Endpoints";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A573B7DF2A593D670074BC93 /* Forest Flower Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A573B7E62A593D670074BC93 /* Build configuration list for PBXNativeTarget "Forest Flower Tests" */;
+			buildPhases = (
+				A573B7DC2A593D670074BC93 /* Sources */,
+				A573B7DD2A593D670074BC93 /* Frameworks */,
+				A573B7DE2A593D670074BC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A573B7E52A593D670074BC93 /* PBXTargetDependency */,
+			);
+			name = "Forest Flower Tests";
+			productName = "Forest Flower Tests";
+			productReference = A573B7E02A593D670074BC93 /* Forest Flower Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5C31DAB2A342496000A6F91 /* Forest Flower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C31DBB2A342497000A6F91 /* Build configuration list for PBXNativeTarget "Forest Flower" */;
+			buildPhases = (
+				A5C31DA82A342496000A6F91 /* Sources */,
+				A5C31DA92A342496000A6F91 /* Frameworks */,
+				A5C31DAA2A342496000A6F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Forest Flower";
+			productName = Unspash;
+			productReference = A5C31DAC2A342496000A6F91 /* Forest Flower.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5C31DA42A342496000A6F91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A573B7DF2A593D670074BC93 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A5C31DAB2A342496000A6F91;
+					};
+					A5C31DAB2A342496000A6F91 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = A5C31DA72A342496000A6F91 /* Build configuration list for PBXProject "Forest Flower" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5C31DA32A342496000A6F91;
+			productRefGroup = A5C31DAD2A342496000A6F91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5C31DAB2A342496000A6F91 /* Forest Flower */,
+				A573B7DF2A593D670074BC93 /* Forest Flower Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A573B7DE2A593D670074BC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A573B7ED2A5945690074BC93 /* PhotosResponse.json in Resources */,
+				A51149432A5A95BB00698852 /* SearchPhotosResult.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C31DAA2A342496000A6F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C31DB82A342497000A6F91 /* Preview Assets.xcassets in Resources */,
+				A5C31DB42A342497000A6F91 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A573B7DC2A593D670074BC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A573B7E32A593D670074BC93 /* HomeViewModelTests.swift in Sources */,
+				A573B7F12A5984E60074BC93 /* MockedAPIManager.swift in Sources */,
+				A51149412A5A882400698852 /* SearchViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C31DA82A342496000A6F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F916C42A3597DF00DF5ED7 /* HTTPMethod.swift in Sources */,
+				A5F916C62A3597F400DF5ED7 /* EndPoint.swift in Sources */,
+				A5278EE82A3AF7410046859B /* SystemImage.swift in Sources */,
+				A5F916C22A3597CF00DF5ED7 /* CustomError.swift in Sources */,
+				A50FC0562A36D33600D7E558 /* PhotoView.swift in Sources */,
+				A56B656C2A512B0000D6A33F /* AnimatingHeart.swift in Sources */,
+				A59302B12A39BF20008D74AB /* URLImage.swift in Sources */,
+				A50FC0582A36F6C800D7E558 /* ErrorHoarding.swift in Sources */,
+				A5F916C82A35980500DF5ED7 /* SessionProvider.swift in Sources */,
+				A551AA282A46F8CE008A1EFF /* SearchTextField.swift in Sources */,
+				A52DA5AF2A3F410C0068ED50 /* PhoneViewModel+Extension.swift in Sources */,
+				A5242BD92A3A04DC00D73827 /* Font.swift in Sources */,
+				A578940C2A4037D60001E348 /* SearchResultView.swift in Sources */,
+				A57CF9342A4802EC009A5C74 /* SearchPhotos.swift in Sources */,
+				A59302AF2A39BC37008D74AB /* CacheManager.swift in Sources */,
+				A57894092A4013B50001E348 /* Task+Extension.swift in Sources */,
+				A51D94E82A3DEC0A004588EC /* SavedPhoto+CoreDataProperties.swift in Sources */,
+				A5F466DB2A35C6B7001CF7A7 /* APIPhoto.swift in Sources */,
+				A5F466DE2A35D188001CF7A7 /* Color+Extensions.swift in Sources */,
+				A5DDEF5A2A517D300082C0E0 /* LikesViewModel.swift in Sources */,
+				A5DDEF642A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataClass.swift in Sources */,
+				A5F466D72A35BC75001CF7A7 /* APIKeys.swift in Sources */,
+				A50FC0542A36CABF00D7E558 /* BlurHashDecode.swift in Sources */,
+				A5F916BF2A3591FC00DF5ED7 /* APIManager.swift in Sources */,
+				A5F916CA2A35985600DF5ED7 /* APIDataCoding.swift in Sources */,
+				A52AEE022A3B57910054A082 /* Downloader.swift in Sources */,
+				A57CF9362A480553009A5C74 /* APISearchResult.swift in Sources */,
+				A59C197C2A3C5092003D2A73 /* CircularProgress.swift in Sources */,
+				A5C31DBF2A3424EE000A6F91 /* HomeView.swift in Sources */,
+				A57CF9382A48380C009A5C74 /* CategoryGrid.swift in Sources */,
+				A52E5ADE2A3759A20030AB4B /* PhotoDetailsView.swift in Sources */,
+				A51D94ED2A3DF933004588EC /* SavedPhotosViewModel.swift in Sources */,
+				A50FC0522A36C9B600D7E558 /* PhotoViewModel.swift in Sources */,
+				A54563F22A3D790C00EFEFDC /* DynamicGrid.swift in Sources */,
+				A5F916CD2A35B2FC00DF5ED7 /* FetchPhotos.swift in Sources */,
+				A5DDEF652A51804E0082C0E0 /* ManagedLikedPhoto+CoreDataProperties.swift in Sources */,
+				A51D94EB2A3DEC78004588EC /* CoreDataManager.swift in Sources */,
+				A51D94E02A3DEAB9004588EC /* ForestFlower.xcdatamodeld in Sources */,
+				A51D94E72A3DEC0A004588EC /* SavedPhoto+CoreDataClass.swift in Sources */,
+				A5C31DC82A342EA1000A6F91 /* MainScene.swift in Sources */,
+				A5DDEF582A517CAA0082C0E0 /* LikesView.swift in Sources */,
+				A59C197A2A3C4EB3003D2A73 /* PhotoDetailsHeaderView.swift in Sources */,
+				A573B7F22A59863E0074BC93 /* BundleFileLoader.swift in Sources */,
+				A59C19782A3C4E47003D2A73 /* AboutUserView.swift in Sources */,
+				A551AA252A46E258008A1EFF /* SearchViewModel.swift in Sources */,
+				A5BC7F4B2A3DDA7500FF26FE /* SavedPhotosView.swift in Sources */,
+				A5C31DB02A342496000A6F91 /* ForestFlowerApp.swift in Sources */,
+				A50FC05A2A370AD800D7E558 /* NavigationConfigurator.swift in Sources */,
+				A5C31DCA2A342F45000A6F91 /* AppDelegate.swift in Sources */,
+				A5C31DC12A34250A000A6F91 /* HomeViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A573B7E52A593D670074BC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C31DAB2A342496000A6F91 /* Forest Flower */;
+			targetProxy = A573B7E42A593D670074BC93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A573B7E72A593D670074BC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9M6RB2X34;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Indrajit.Forest-Flower-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forest Flower.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Forest Flower";
+			};
+			name = Debug;
+		};
+		A573B7E82A593D670074BC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9M6RB2X34;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Indrajit.Forest-Flower-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Forest Flower.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Forest Flower";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5C31DB92A342497000A6F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5C31DBA2A342497000A6F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A5C31DBC2A342497000A6F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Forest Flower/Resources/Forest Flower.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Forest Flower/Preview Content\"";
+				DEVELOPMENT_TEAM = X9M6RB2X34;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Forest Flower/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Forest Flower";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To save downloaded image into your photo album";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forest-flower";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5C31DBD2A342497000A6F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Forest Flower/Resources/Forest Flower.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Forest Flower/Preview Content\"";
+				DEVELOPMENT_TEAM = X9M6RB2X34;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Forest Flower/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Forest Flower";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To save downloaded image into your photo album";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.forest-flower";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A573B7E62A593D670074BC93 /* Build configuration list for PBXNativeTarget "Forest Flower Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A573B7E72A593D670074BC93 /* Debug */,
+				A573B7E82A593D670074BC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C31DA72A342496000A6F91 /* Build configuration list for PBXProject "Forest Flower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C31DB92A342497000A6F91 /* Debug */,
+				A5C31DBA2A342497000A6F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C31DBB2A342497000A6F91 /* Build configuration list for PBXNativeTarget "Forest Flower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C31DBC2A342497000A6F91 /* Debug */,
+				A5C31DBD2A342497000A6F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A51D94DE2A3DEAB9004588EC /* ForestFlower.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A51D94DF2A3DEAB9004588EC /* ForestFlower.xcdatamodel */,
+			);
+			currentVersion = A51D94DF2A3DEAB9004588EC /* ForestFlower.xcdatamodel */;
+			path = ForestFlower.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5C31DA42A342496000A6F91 /* Project object */;
+}
